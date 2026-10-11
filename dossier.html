@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Досье · Майкл Морриган — БМР Эшвуд</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Courier+Prime:wght@400;700&family=Special+Elite&display=swap" rel="stylesheet">
+<style>
+  body { background: #1a1714; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4'/%3E%3C/filter%3E%3Crect width='100' height='100' filter='url(%23n)' opacity='0.08'/%3E%3C/svg%3E"); color: #c9b896; }
+  .paper { background: #262019; box-shadow: 0 2px 30px rgba(0,0,0,0.6); border-color: #4a3f30 !important; }
+  .serif { font-family: 'Playfair Display', serif; }
+  .type { font-family: 'Courier Prime', monospace; }
+  .stamp { font-family: 'Special Elite', cursive; }
+  .divider { border-top: 1px solid #4a3f30; }
+  .text-dim { color: #8a7a5a; }
+  .text-bright { color: #e8d8b0; }
+  .stamp-red { color: #b0332f; border: 3px double #b0332f; transform: rotate(-8deg); opacity: 0.9; }
+</style>
+</head>
+<body>
+
+<div class="bg-black text-amber-100/70 text-xs type py-2 px-4 flex justify-between border-b border-stone-800">
+  <span>ФЕДЕРАЛЬНОЕ БЮРО — ОТДЕЛЕНИЕ ЭШВУДА</span>
+  <span>12 МАРТА 1922 г.</span>
+</div>
+
+<div class="max-w-5xl mx-auto px-4 py-8">
+
+  <a href="reestr.html" class="type text-xs text-dim hover:text-amber-200 mb-6 inline-block">← К РЕЕСТРУ</a>
+
+  <section class="paper p-8 mb-8 border relative">
+    <div class="stamp stamp-red absolute top-6 right-6 px-4 py-1 text-sm bg-black/40">ЛИЧНОЕ ДЕЛО</div>
+    <h2 class="serif text-2xl font-bold mb-4 border-b-2 border-stone-700 pb-2 text-bright">ДОСЬЕ № 0114-А</h2>
+
+    <div class="grid md:grid-cols-3 gap-6">
+      <div class="md:col-span-1">
+        <div class="border-4 border-stone-700 aspect-[3/4] overflow-hidden">
+          <img src="https://i.postimg.cc/gwM92LTM/xx.jpg" alt="Майкл Морриган" class="w-full h-full object-cover sepia">
+        </div>
+        <p class="type text-xs text-center mt-2 text-dim">[ФОТОГРАФИЯ ПОДШИТА К ДЕЛУ]</p>
+      </div>
+
+      <div class="md:col-span-2 space-y-3 type text-sm">
+        <p><span class="font-bold text-bright">Имя:</span> Майкл Морриган</p>
+        <p><span class="font-bold text-bright">Кодовое обозначение:</span> «Патриот»</p>
+        <p><span class="font-bold text-bright">Статус мага:</span> Лицензия I класса, №0114-А</p>
+        <p><span class="font-bold text-bright">Место рождения:</span> Эшвуд, Огайо</p>
+        <p><span class="font-bold text-bright">Год рождения:</span> 1895</p>
+        <p><span class="font-bold text-bright">Род деятельности:</span> Служба в структурах Бюро</p>
+        <div class="divider my-3"></div>
+        <p class="text-dim italic">я не придумал что тут писать, Эми, но тут будет выжимка из анкеты</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="paper p-6 mb-6 border">
+    <h2 class="serif font-bold text-lg mb-3 text-bright border-b border-stone-700 pb-2">АНКЕТА</h2>
+    <div class="type text-sm space-y-3">
+      <p><span class="font-bold text-bright">Магические способности:</span> <span class="text-dim">[уточняется]</span></p>
+      <p><span class="font-bold text-bright">Образование:</span> <span class="text-dim">[уточняется]</span></p>
+      <p><span class="font-bold text-bright">Семейное положение:</span> <span class="text-dim">[уточняется]</span></p>
+      <p><span class="font-bold text-bright">Отношение к Протоколу Гармонии:</span> <span class="text-dim">[уточняется]</span></p>
+      <p><span class="font-bold text-bright">Примечания инспектора:</span> <span class="text-dim">[уточняется]</span></p>
+    </div>
+  </section>
+
+  <section class="paper p-6 border-l-4 border-red-900">
+    <p class="type text-sm leading-relaxed"><span class="font-bold text-bright">СТАТУС ДЕЛА:</span> <span class="stamp text-red-400">ОТКРЫТО</span>. Досье находится в стадии заполнения. Инспектору поручено дополнить материал в срок до 30 дней.</p>
+  </section>
+
+</div>
+
+</body>
+</html>
