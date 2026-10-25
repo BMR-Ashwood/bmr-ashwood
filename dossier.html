@@ -32,12 +32,9 @@
   .hr-thin { border-top: 1px solid #1a1a1a; }
   .hr-thick { border-top: 3px solid #1a1a1a; }
   .hr-double { border-top: 5px double #1a1a1a; }
-  .hr-dots { border-top: 2px dotted #5a4a30; }
-  .rule-v { border-left: 1px solid #5a4a30; }
   .stamp-red { color: #8b1a1a; border: 2px double #8b1a1a; transform: rotate(-7deg); opacity: 0.92; }
   .stamp-black { color: #1a1a1a; border: 2px double #1a1a1a; transform: rotate(-5deg); opacity: 0.9; }
   .banner-black { background: #0a0a0a; color: #e8dfc8; }
-  .section-head { font-family: 'Playfair Display', serif; font-weight: 900; letter-spacing: 0.05em; }
   .kicker { font-family: 'Special Elite', cursive; letter-spacing: 0.2em; }
   .dateline { font-family: 'Courier Prime', monospace; }
   .column-2 { column-count: 2; column-gap: 1.5rem; column-rule: 1px solid #8a7a5a; }
@@ -50,14 +47,13 @@
 
   <a href="reestr.html" class="type text-xs text-stone-400 hover:text-amber-200 mb-4 inline-block">← К РЕЕСТРУ</a>
 
-  <!-- ================= NEWSPAPER ================= -->
   <div class="paper p-5 md:p-10">
 
     <!-- ==== MASTHEAD ==== -->
     <header class="text-center mb-4">
       <div class="dateline text-[10px] flex justify-between text-dim pb-2">
         <span>ОТДЕЛЕНИЕ ЭШВУД · ШТАТ ОГАЙО</span>
-        <span>№ 0114–0115</span>
+        <span>№ 0114–0119</span>
       </div>
       <div class="hr-thick"></div>
       <h1 class="blackletter text-4xl md:text-7xl text-bright leading-none py-3">The Ashwood Tribune</h1>
@@ -65,85 +61,45 @@
       <div class="hr-thick mt-3"></div>
       <div class="dateline text-[10px] flex justify-between text-dim pt-2">
         <span>ОСНОВАНА В 1887 г.</span>
-        <span>СРЕДА, 12 МАРТА 1922 г.</span>
+        <span>12 МАРТА 1922 г.</span>
         <span>ТОМ XIV · АРХИВНЫЙ ВЫПУСК</span>
       </div>
       <div class="hr-double mt-2"></div>
     </header>
 
-    <!-- ==== RUBRIC LINE ==== -->
-    <div class="dateline text-[10px] flex justify-between text-dim py-2 border-y border-[#5a4a30] mb-6">
-      <span>ЛИЧНЫЕ ДЕЛА</span>
-      <span>·</span>
-      <span>ПОСТАНОВЛЕНИЯ БЮРО</span>
-      <span>·</span>
-      <span>СЛУЖЕБНЫЕ СВЕДЕНИЯ</span>
-      <span>·</span>
-      <span>АРХИВ ОТДЕЛЕНИЯ</span>
-    </div>
-
     <!-- ============================================================
          ДОСЬЕ №1 — МЕНДЕЛЬ
     ============================================================ -->
-    <section id="mendel" class="mb-10">
-
-      <!-- KICKER -->
+    <section id="mendel" class="mb-10 mt-8">
       <div class="kicker text-[10px] text-center text-dim mb-1">ДОСЬЕ № 0114-А · ЛИЧНОЕ ДЕЛО БЮРО</div>
-
-      <!-- HEADLINE -->
-      <h2 class="serif font-black text-center text-bright text-4xl md:text-6xl leading-none mb-2">
-        Грегор Мендель
-      </h2>
-      <div class="serif italic text-center text-sm md:text-base text-dim mb-3">
-        Директор Бюро Магического Регулирования · Отделение Эшвуд · 1858–1922
-      </div>
-
+      <h2 class="serif font-black text-center text-bright text-4xl md:text-6xl leading-none mb-2">Грегор Мендель</h2>
+      <div class="serif italic text-center text-sm md:text-base text-dim mb-3">Директор Бюро Магического Регулирования · Отделение Эшвуд · 1858–1922</div>
       <div class="hr-thick mb-1"></div>
       <div class="hr-thin mb-4"></div>
+      <div class="banner-black py-2 px-4 text-center mb-5"><span class="stamp text-sm tracking-widest">СКОНЧАЛСЯ 11 МАРТА 1922 г.</span></div>
 
-      <!-- BLACK BANNER STAMP -->
-      <div class="banner-black py-2 px-4 text-center mb-5">
-        <span class="stamp text-sm tracking-widest">СКОНЧАЛСЯ 11 МАРТА 1922 г.</span>
-      </div>
-
-      <!-- MAIN GRID -->
       <div class="grid md:grid-cols-12 gap-5">
-
-        <!-- PHOTO COLUMN -->
         <div class="md:col-span-4">
           <div class="photo-frame">
-            <img src="https://i.postimg.cc/2g" alt="Грегор Мендель" class="w-full aspect-[3/4] object-cover photo-bw">
+            <img src="https://i.postimg.cc/253YzhnL/govno.jpg" alt="Грегор Мендель" class="w-full aspect-[3/4] object-cover photo-bw">
           </div>
-          <div class="dateline text-[10px] text-dim text-center mt-2 italic">
-            Фотография из личного дела Бюро
-          </div>
-
-          <!-- STAMP -->
-          <div class="mt-4 flex justify-center">
-            <div class="stamp stamp-red px-4 py-2 text-xs">АРХИВ · ЗАКРЫТО</div>
-          </div>
+          <div class="dateline text-[10px] text-dim text-center mt-2 italic">Фотография из личного дела Бюро</div>
+          <div class="mt-4 flex justify-center"><div class="stamp stamp-red px-4 py-2 text-xs">АРХИВ · ЗАКРЫТО</div></div>
         </div>
-
-        <!-- TEXT COLUMN -->
         <div class="md:col-span-8">
           <div class="serif text-base md:text-lg leading-relaxed text-bright space-y-3">
             <p class="first-letter:font-black first-letter:text-5xl first-letter:mr-2 first-letter:float-left first-letter:leading-none">
-              Бюро Магического Регулирования с прискорбием сообщает о кончине директора отделения Эшвуд. Тело обнаружено в служебном кабинете утром 11 марта — за четырнадцать часов до подписания Протокола Гармонии, документа, призванного изменить порядок регулирования магии в штате.
+              Бюро Магического Регулирования с прискорбием сообщает о кончине директора отделения Эшвуд. Тело обнаружено в служебном кабинете утром 11 марта — за четырнадцать часов до подписания Протокола Гармонии.
             </p>
-            <p>
-              Обстоятельства смерти на момент публикации <span class="bg-[#d4c9ac] px-1 italic">не установлены</span>. Официальная причина — «сердечный приступ». Экспертиза магического фона, по данным архива, <span class="bg-[#d4c9ac] px-1 italic">не проводилась</span>.
-            </p>
+            <p>Обстоятельства смерти на момент публикации <span class="bg-[#d4c9ac] px-1 italic">не установлены</span>. Официальная причина — «сердечный приступ». Экспертиза магического фона <span class="bg-[#d4c9ac] px-1 italic">не проводилась</span>.</p>
           </div>
         </div>
       </div>
 
-      <!-- DETAILS BLOCK — 3 COLUMNS -->
       <div class="mt-6 pt-4 hr-thick">
         <div class="grid md:grid-cols-3 gap-6">
-
           <div>
-            <div class="kicker text-[10px] text-bright mb-2">ОСНОВНЫЕ СВЕДЕНИЯ</div>
-            <div class="hr-thin mb-2"></div>
+            <div class="kicker text-[10px] text-bright mb-2">ОСНОВНЫЕ СВЕДЕНИЯ</div><div class="hr-thin mb-2"></div>
             <div class="type text-sm space-y-2">
               <p><span class="font-bold text-bright">Имя:</span> Грегор Мендель</p>
               <p><span class="font-bold text-bright">Должность:</span> Директор БМР, отделение Эшвуд</p>
@@ -151,46 +107,37 @@
               <p><span class="font-bold text-bright">Статус мага:</span> Лицензия I класса, №0114-А</p>
             </div>
           </div>
-
           <div>
-            <div class="kicker text-[10px] text-bright mb-2">ОБСТОЯТЕЛЬСТВА КОНЧИНЫ</div>
-            <div class="hr-thin mb-2"></div>
+            <div class="kicker text-[10px] text-bright mb-2">ОБСТОЯТЕЛЬСТВА КОНЧИНЫ</div><div class="hr-thin mb-2"></div>
             <div class="type text-sm space-y-2">
               <p><span class="font-bold text-bright">Дата:</span> 11 марта 1922 г.</p>
               <p><span class="font-bold text-bright">Место:</span> служебный кабинет, отделение Эшвуд</p>
-              <p><span class="font-bold text-bright">Причина:</span> «сердечный приступ»</p>
-              <p><span class="font-bold text-bright">Экспертиза:</span> не проводилась</p>
+              <p><span class="font-bold text-bright">Причина:</span> официально — «сердечный приступ»</p>
             </div>
           </div>
-
           <div>
-            <div class="kicker text-[10px] text-bright mb-2">СТАТУС ДЕЛА</div>
-            <div class="hr-thin mb-2"></div>
+            <div class="kicker text-[10px] text-bright mb-2">СТАТУС ДЕЛА</div><div class="hr-thin mb-2"></div>
             <div class="type text-sm space-y-2">
               <p class="stamp text-red-800 text-sm">ЗАКРЫТО ПО ФАКТУ СМЕРТИ</p>
-              <p class="text-xs text-dim">Материалы подшиты и переданы в архив 12 марта 1922 г. Дальнейшее расследование не ведётся.</p>
+              <p class="text-xs text-dim">Материалы подшиты и переданы в архив 12 марта 1922 г.</p>
             </div>
           </div>
-
         </div>
       </div>
 
-      <!-- SERVICE RECORD -->
       <div class="mt-6 pt-4 hr-thick">
         <div class="kicker text-[10px] text-bright mb-3">ПОСЛУЖНОЙ СПИСОК</div>
         <div class="column-2 type text-sm">
-          <p class="mb-2"><span class="font-bold text-bright">1887 —</span> Поступление на службу в Бюро, отделение Эшвуд.</p>
+          <p class="mb-2"><span class="font-bold text-bright">1887 —</span> Поступление на службу в Бюро.</p>
           <p class="mb-2"><span class="font-bold text-bright">1894 —</span> Назначение инспектором III категории.</p>
           <p class="mb-2"><span class="font-bold text-bright">1901 —</span> Повышение до старшего инспектора.</p>
           <p class="mb-2"><span class="font-bold text-bright">1908 —</span> Назначение заместителем Директора.</p>
           <p class="mb-2"><span class="font-bold text-bright">1915 —</span> Назначение Директором отделения Эшвуд.</p>
-          <p class="mb-2"><span class="font-bold text-bright">1922 —</span> Инициатор Протокола Гармонии. Скончался 11 марта.</p>
+          <p class="mb-2"><span class="font-bold text-bright">1922 —</span> Скончался 11 марта.</p>
         </div>
       </div>
-
     </section>
 
-    <!-- ============ DIVIDER ============ -->
     <div class="hr-double my-8"></div>
     <div class="text-center kicker text-[10px] text-dim mb-8">· · · ПОСТУПИЛО НОВОЕ ДЕЛО · · ·</div>
 
@@ -198,374 +145,426 @@
          ДОСЬЕ №2 — МОРРИГАН
     ============================================================ -->
     <section id="morrigan">
-  <div class="kicker text-[10px] text-center text-dim mb-1">ДОСЬЕ № 0115-А · ЛИЧНОЕ ДЕЛО БЮРО</div>
-  <h2 class="serif font-black text-center text-bright text-4xl md:text-6xl leading-none mb-2">Майкл Морриган</h2>
-  <div class="serif italic text-center text-sm md:text-base text-dim mb-3">Служба в структурах Бюро · р. [ЗАСЕКРЕЧЕНО]</div>
-  <div class="hr-thick mb-1"></div>
-  <div class="hr-thin mb-4"></div>
+      <div class="kicker text-[10px] text-center text-dim mb-1">ДОСЬЕ № 0115-А · ЛИЧНОЕ ДЕЛО БЮРО</div>
+      <h2 class="serif font-black text-center text-bright text-4xl md:text-6xl leading-none mb-2">Майкл Морриган</h2>
+      <div class="serif italic text-center text-sm md:text-base text-dim mb-3">Служба в структурах Бюро · р. [ЗАСЕКРЕЧЕНО]</div>
+      <div class="hr-thick mb-1"></div>
+      <div class="hr-thin mb-4"></div>
 
-  <!-- MAIN GRID -->
-  <div class="grid md:grid-cols-12 gap-5">
-    <div class="md:col-span-4">
-      <div class="photo-frame">
-        <img src="https://i.postimg.cc/gwM92LTM/xx.jpg" alt="Майкл Морриган" class="w-full aspect-[3/4] object-cover photo-bw">
-      </div>
-      <div class="dateline text-[10px] text-dim text-center mt-2 italic">Фотография подшита к делу</div>
-      <div class="mt-4 flex justify-center">
-        <div class="stamp stamp-black px-4 py-2 text-xs">ДЕЛО ОТКРЫТО</div>
-      </div>
-    </div>
-    <div class="md:col-span-8">
-      <div class="serif text-base md:text-lg leading-relaxed text-bright space-y-3">
-        <p class="first-letter:font-black first-letter:text-5xl first-letter:mr-2 first-letter:float-left first-letter:leading-none">
-          Настоящее дело находится в стадии заполнения. Ниже приведены сведения, подшитые к архивному экземпляру на момент публикации.
-        </p>
-      </div>
-    </div>
-  </div>
-
-  <!-- DETAILS BLOCK -->
-  <div class="mt-6 pt-4 hr-thick">
-    <div class="grid md:grid-cols-3 gap-6">
-      <div>
-        <div class="kicker text-[10px] text-bright mb-2">ОСНОВНЫЕ СВЕДЕНИЯ</div>
-        <div class="hr-thin mb-2"></div>
-        <div class="type text-sm space-y-2">
-          <p><span class="font-bold text-bright">Имя:</span> Майкл Морриган</p>
-          <p><span class="font-bold text-bright">Место рождения:</span> <span class="bg-[#d4c9ac] px-1">[ЗАСЕКРЕЧЕНО]</span></p>
-          <p><span class="font-bold text-bright">Год рождения:</span> <span class="bg-[#d4c9ac] px-1">[ЗАСЕКРЕЧЕНО]</span></p>
+      <div class="grid md:grid-cols-12 gap-5">
+        <div class="md:col-span-4">
+          <div class="photo-frame">
+            <img src="https://i.postimg.cc/J7J8Bskf/michael.jpg" alt="Майкл Морриган" class="w-full aspect-[3/4] object-cover photo-bw">
+          </div>
+          <div class="dateline text-[10px] text-dim text-center mt-2 italic">Фотография подшита к делу</div>
+          <div class="mt-4 flex justify-center"><div class="stamp stamp-black px-4 py-2 text-xs">ДЕЛО ОТКРЫТО</div></div>
+        </div>
+        <div class="md:col-span-8">
+          <div class="serif text-base md:text-lg leading-relaxed text-bright space-y-3">
+            <p class="first-letter:font-black first-letter:text-5xl first-letter:mr-2 first-letter:float-left first-letter:leading-none">
+              Настоящее дело находится в стадии заполнения. Ниже приведены сведения, подшитые к архивному экземпляру на момент публикации.
+            </p>
+          </div>
         </div>
       </div>
-      <div>
-        <div class="kicker text-[10px] text-bright mb-2">СЛУЖЕБНЫЕ ДАННЫЕ</div>
-        <div class="hr-thin mb-2"></div>
-        <div class="type text-sm space-y-2">
-          <p><span class="font-bold text-bright">Род деятельности:</span> Служба в структурах Бюро</p>
-          <p><span class="font-bold text-bright">Статус мага:</span> Лицензия I класса, №0115-А</p>
+
+      <div class="mt-6 pt-4 hr-thick">
+        <div class="grid md:grid-cols-3 gap-6">
+          <div>
+            <div class="kicker text-[10px] text-bright mb-2">ОСНОВНЫЕ СВЕДЕНИЯ</div><div class="hr-thin mb-2"></div>
+            <div class="type text-sm space-y-2">
+              <p><span class="font-bold text-bright">Имя:</span> Майкл Морриган</p>
+              <p><span class="font-bold text-bright">Место рождения:</span> <span class="bg-[#d4c9ac] px-1">[ЗАСЕКРЕЧЕНО]</span></p>
+              <p><span class="font-bold text-bright">Год рождения:</span> <span class="bg-[#d4c9ac] px-1">[ЗАСЕКРЕЧЕНО]</span></p>
+            </div>
+          </div>
+          <div>
+            <div class="kicker text-[10px] text-bright mb-2">СЛУЖЕБНЫЕ ДАННЫЕ</div><div class="hr-thin mb-2"></div>
+            <div class="type text-sm space-y-2">
+              <p><span class="font-bold text-bright">Род деятельности:</span> Служба в структурах Бюро</p>
+              <p><span class="font-bold text-bright">Статус мага:</span> Лицензия I класса, №0115-А</p>
+            </div>
+          </div>
+          <div>
+            <div class="kicker text-[10px] text-bright mb-2">СТАТУС ДЕЛА</div><div class="hr-thin mb-2"></div>
+            <div class="type text-sm space-y-2">
+              <p class="stamp text-red-800 text-sm">ОТКРЫТО</p>
+              <p class="text-xs text-dim">Досье в стадии заполнения.</p>
+            </div>
+            <div class="mt-4 flex justify-end pr-4 opacity-80">
+              <svg width="60" height="60" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" style="transform: rotate(-15deg);">
+                <path d="M50 85 C 20 60, 10 40, 25 25 C 40 10, 50 25, 50 35 C 50 25, 60 10, 75 25 C 90 40, 80 60, 50 85 Z" stroke="#8b1a1a" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="150" stroke-dashoffset="0" opacity="0.85" />
+                <path d="M52 82 C 22 58, 12 42, 26 27 C 41 13, 50 27, 50 36 C 50 27, 59 13, 74 27 C 88 42, 78 58, 52 82 Z" stroke="#8b1a1a" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" opacity="0.4" />
+              </svg>
+            </div>
+          </div>
         </div>
       </div>
-      <div>
-        <div class="kicker text-[10px] text-bright mb-2">СТАТУС ДЕЛА</div>
-        <div class="hr-thin mb-2"></div>
-        <div class="type text-sm space-y-2">
-          <p class="stamp text-red-800 text-sm">ОТКРЫТО</p>
-          <p class="text-xs text-dim">Досье в стадии заполнения. Инспектору поручено дополнить материал в срок до 30 дней.</p>
-        </div>
-        <!-- ПАСХАЛКА: Ручкой нарисованное сердечко -->
-        <div class="mt-4 flex justify-end pr-4 opacity-80">
-          <svg width="60" height="60" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" style="transform: rotate(-15deg);">
-            <path d="M50 85 C 20 60, 10 40, 25 25 C 40 10, 50 25, 50 35 C 50 25, 60 10, 75 25 C 90 40, 80 60, 50 85 Z" stroke="#8b1a1a" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="150" stroke-dashoffset="0" opacity="0.85" />
-            <path d="M52 82 C 22 58, 12 42, 26 27 C 41 13, 50 27, 50 36 C 50 27, 59 13, 74 27 C 88 42, 78 58, 52 82 Z" stroke="#8b1a1a" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" opacity="0.4" />
-          </svg>
+
+      <div class="mt-6 pt-4 hr-thick">
+        <div class="kicker text-[10px] text-bright mb-3">АНКЕТА</div>
+        <div class="column-2 type text-sm">
+          <p class="mb-2"><span class="font-bold text-bright">Магические способности:</span> <span class="text-dim">Телепатия</span></p>
+          <p class="mb-2"><span class="font-bold text-bright">Образование:</span> <span class="text-dim">Доктор философии (Ph.D.) по физике, Гарвардский университет, 1896 г.</span></p>
+          <p class="mb-2"><span class="font-bold text-bright">Семейное положение:</span> <span class="text-dim">Вдовец</span></p>
         </div>
       </div>
-    </div>
-  </div>
 
-  <!-- QUESTIONNAIRE -->
-  <div class="mt-6 pt-4 hr-thick">
-    <div class="kicker text-[10px] text-bright mb-3">АНКЕТА</div>
-    <div class="column-2 type text-sm">
-      <p class="mb-2"><span class="font-bold text-bright">Магические способности:</span> <span class="text-dim">Телепатия</span></p>
-      <p class="mb-2"><span class="font-bold text-bright">Образование:</span> <span class="text-dim">Доктор философии (Ph.D.) по физике, Гарвардский университет, 1896 г.</span></p>
-      <p class="mb-2"><span class="font-bold text-bright">Семейное положение:</span> <span class="text-dim">Вдовец</span></p>
-    </div>
-  </div>
-
-  <!-- SERVICE RECORD -->
-  <div class="mt-6 pt-4 hr-thick">
-    <div class="kicker text-[10px] text-bright mb-3">ПОСЛУЖНОЙ СПИСОК</div>
-    <div class="column-2 type text-sm">
-      <p class="mb-2"><span class="font-bold text-bright">1897 —</span> Перевод на службу в отделение Эшвуд.</p>
-      <p class="mb-2"><span class="font-bold text-bright">1900 —</span> Назначение инспектором III категории.</p>
-      <p class="mb-2"><span class="font-bold text-bright">1908 —</span> Повышение до старшего инспектора.</p>
-      <p class="mb-2"><span class="font-bold text-bright">1915 —</span> Назначение заместителем Директора.</p>
-      <p class="mb-2"><span class="font-bold text-bright">1922 —</span> Назначение Директором отделения Эшвуд.</p>
-    </div>
-  </div>
-
+      <div class="mt-6 pt-4 hr-thick">
+        <div class="kicker text-[10px] text-bright mb-3">ПОСЛУЖНОЙ СПИСОК</div>
+        <div class="column-2 type text-sm">
+          <p class="mb-2"><span class="font-bold text-bright">1897 —</span> Перевод на службу в отделение Эшвуд.</p>
+          <p class="mb-2"><span class="font-bold text-bright">1900 —</span> Назначение инспектором III категории.</p>
+          <p class="mb-2"><span class="font-bold text-bright">1908 —</span> Повышение до старшего инспектора.</p>
+          <p class="mb-2"><span class="font-bold text-bright">1915 —</span> Назначение заместителем Директора.</p>
+          <p class="mb-2"><span class="font-bold text-bright">1922 —</span> Назначение Директором отделения Эшвуд.</p>
+        </div>
+      </div>
     </section>
-<!-- ============ DIVIDER ============ -->
-<div class="hr-double my-8"></div>
-<div class="text-center kicker text-[10px] text-dim mb-8">· · · ПОСТУПИЛО НОВОЕ ДЕЛО · · ·</div>
 
-<!-- ============================================================
-     ДОСЬЕ №3 — ЭВЕЛИН РУ
-============================================================ -->
-<section id="evelyn">
+    <div class="hr-double my-8"></div>
+    <div class="text-center kicker text-[10px] text-dim mb-8">· · · ПОСТУПИЛО НОВОЕ ДЕЛО · · ·</div>
 
-  <div class="kicker text-[10px] text-center text-dim mb-1">ДОСЬЕ № 0116-Б · ЛИЧНОЕ ДЕЛО БЮРО</div>
+    <!-- ============================================================
+         ДОСЬЕ №3 — ЭВЕЛИН РУ
+    ============================================================ -->
+    <section id="evelyn">
+      <div class="kicker text-[10px] text-center text-dim mb-1">ДОСЬЕ № 0116-Б · ЛИЧНОЕ ДЕЛО БЮРО</div>
+      <h2 class="serif font-black text-center text-bright text-4xl md:text-6xl leading-none mb-2">Эвелин Ру</h2>
+      <div class="serif italic text-center text-sm md:text-base text-dim mb-3">Служба в структурах Бюро · р. 1896</div>
+      <div class="hr-thick mb-1"></div>
+      <div class="hr-thin mb-4"></div>
 
-  <h2 class="serif font-black text-center text-bright text-4xl md:text-6xl leading-none mb-2">
-    Эвелин Ру
-  </h2>
-  <div class="serif italic text-center text-sm md:text-base text-dim mb-3">
-    Служба в структурах Бюро · р. 1896
-  </div>
-
-  <div class="hr-thick mb-1"></div>
-  <div class="hr-thin mb-4"></div>
-
-  <!-- MAIN GRID -->
-  <div class="grid md:grid-cols-12 gap-5">
-
-    <!-- PHOTO COLUMN -->
-    <div class="md:col-span-4">
-      <div class="photo-frame">
-        <div class="w-full aspect-[3/4] bg-[#c8bfa8] flex items-center justify-center border border-[#1a1a1a]">
-          <span class="type text-xs text-dim">[ФОТОГРАФИЯ НЕ ПРИЛОЖЕНА]</span>
+      <div class="grid md:grid-cols-12 gap-5">
+        <div class="md:col-span-4">
+          <div class="photo-frame">
+            <img src="https://i.postimg.cc/L88JmtbC/evelyn.jpg" alt="Эвелин Ру" class="w-full aspect-[3/4] object-cover photo-bw">
+          </div>
+          <div class="dateline text-[10px] text-dim text-center mt-2 italic">Фотография подшита к делу</div>
+          <div class="mt-4 flex justify-center"><div class="stamp stamp-black px-4 py-2 text-xs">ДЕЛО ОТКРЫТО</div></div>
         </div>
-      </div>
-      <div class="dateline text-[10px] text-dim text-center mt-2 italic">
-        Фотография подшита к делу
-      </div>
-
-      <div class="mt-4 flex justify-center">
-        <div class="stamp stamp-black px-4 py-2 text-xs">ДЕЛО ОТКРЫТО</div>
-      </div>
-    </div>
-
-    <!-- TEXT COLUMN -->
-    <div class="md:col-span-8">
-      <div class="serif text-base md:text-lg leading-relaxed text-bright space-y-3">
-        <p class="first-letter:font-black first-letter:text-5xl first-letter:mr-2 first-letter:float-left first-letter:leading-none">
-          Настоящее дело находится в стадии заполнения. Ниже приведены сведения, подшитые к архивному экземпляру на момент публикации.
-        </p>
-      </div>
-    </div>
-  </div>
-
-  <!-- DETAILS BLOCK — 3 COLUMNS -->
-  <div class="mt-6 pt-4 hr-thick">
-    <div class="grid md:grid-cols-3 gap-6">
-
-      <div>
-        <div class="kicker text-[10px] text-bright mb-2">ОСНОВНЫЕ СВЕДЕНИЯ</div>
-        <div class="hr-thin mb-2"></div>
-        <div class="type text-sm space-y-2">
-          <p><span class="font-bold text-bright">Имя:</span> Эвелин Ру</p>
-          <p><span class="font-bold text-bright">Место рождения:</span> Юзес, округ Гар, Франция</p>
-          <p><span class="font-bold text-bright">Год рождения:</span> 1896</p>
+        <div class="md:col-span-8">
+          <div class="serif text-base md:text-lg leading-relaxed text-bright space-y-3">
+            <p class="first-letter:font-black first-letter:text-5xl first-letter:mr-2 first-letter:float-left first-letter:leading-none">
+              Настоящее дело находится в стадии заполнения. Ниже приведены сведения, подшитые к архивному экземпляру на момент публикации.
+            </p>
+          </div>
         </div>
       </div>
 
-      <div>
-        <div class="kicker text-[10px] text-bright mb-2">СЛУЖЕБНЫЕ ДАННЫЕ</div>
-        <div class="hr-thin mb-2"></div>
-        <div class="type text-sm space-y-2">
-          <p><span class="font-bold text-bright">Род деятельности:</span> Служба в структурах Бюро</p>
-          <p><span class="font-bold text-bright">Статус мага:</span> Лицензия II класса, №0116-Б</p>
+      <div class="mt-6 pt-4 hr-thick">
+        <div class="grid md:grid-cols-3 gap-6">
+          <div>
+            <div class="kicker text-[10px] text-bright mb-2">ОСНОВНЫЕ СВЕДЕНИЯ</div><div class="hr-thin mb-2"></div>
+            <div class="type text-sm space-y-2">
+              <p><span class="font-bold text-bright">Имя:</span> Эвелин Ру</p>
+              <p><span class="font-bold text-bright">Место рождения:</span> Юзес, округ Гар, Франция</p>
+              <p><span class="font-bold text-bright">Год рождения:</span> 1896</p>
+            </div>
+          </div>
+          <div>
+            <div class="kicker text-[10px] text-bright mb-2">СЛУЖЕБНЫЕ ДАННЫЕ</div><div class="hr-thin mb-2"></div>
+            <div class="type text-sm space-y-2">
+              <p><span class="font-bold text-bright">Род деятельности:</span> Служба в структурах Бюро</p>
+              <p><span class="font-bold text-bright">Статус мага:</span> Лицензия II класса, №0116-Б</p>
+            </div>
+          </div>
+          <div>
+            <div class="kicker text-[10px] text-bright mb-2">СТАТУС ДЕЛА</div><div class="hr-thin mb-2"></div>
+            <div class="type text-sm space-y-2">
+              <p class="stamp text-red-800 text-sm">ОТКРЫТО</p>
+              <p class="text-xs text-dim">Досье в стадии заполнения.</p>
+            </div>
+          </div>
         </div>
       </div>
 
-      <div>
-        <div class="kicker text-[10px] text-bright mb-2">СТАТУС ДЕЛА</div>
-        <div class="hr-thin mb-2"></div>
-        <div class="type text-sm space-y-2">
-          <p class="stamp text-red-800 text-sm">ОТКРЫТО</p>
-          <p class="text-xs text-dim">Досье в стадии заполнения. Инспектору поручено дополнить материал в срок до 30 дней.</p>
+      <div class="mt-6 pt-4 hr-thick">
+        <div class="kicker text-[10px] text-bright mb-3">АНКЕТА</div>
+        <div class="column-2 type text-sm">
+          <p class="mb-2"><span class="font-bold text-bright">Магические способности:</span> <span class="text-dim">[уточняется]</span></p>
+          <p class="mb-2"><span class="font-bold text-bright">Образование:</span> <span class="text-dim">Высшее юридическое (Сорбонна, Париж)</span></p>
+          <p class="mb-2"><span class="font-bold text-bright">Семейное положение:</span> <span class="text-dim">Незамужем</span></p>
+          <p class="mb-2"><span class="font-bold text-bright">Примечания директора:</span> <span class="text-dim">[уточняются]</span></p>
+        </div>
+      </div>
+    </section>
+
+    <div class="hr-double my-8"></div>
+    <div class="text-center kicker text-[10px] text-dim mb-8">· · · ПОСТУПИЛО НОВОЕ ДЕЛО · · ·</div>
+
+    <!-- ============================================================
+         ДОСЬЕ №4 — ДЖЕФФРИ МОНТГОМЕРИ
+    ============================================================ -->
+    <section id="jeffrey">
+      <div class="kicker text-[10px] text-center text-dim mb-1">ДОСЬЕ № 0117-В · ЛИЧНОЕ ДЕЛО БЮРО</div>
+      <h2 class="serif font-black text-center text-bright text-4xl md:text-6xl leading-none mb-2">Джеффри Монтгомери</h2>
+      <div class="serif italic text-center text-sm md:text-base text-dim mb-3">Служба в структурах Бюро · р. 1898</div>
+      <div class="hr-thick mb-1"></div>
+      <div class="hr-thin mb-4"></div>
+
+      <div class="grid md:grid-cols-12 gap-5">
+        <div class="md:col-span-4">
+          <div class="photo-frame">
+            <img src="https://i.postimg.cc/ZYx26pwH/jeffrey.jpg" alt="Джеффри Монтгомери" class="w-full aspect-[3/4] object-cover photo-bw">
+          </div>
+          <div class="dateline text-[10px] text-dim text-center mt-2 italic">Фотография подшита к делу</div>
+          <div class="mt-4 flex justify-center"><div class="stamp stamp-black px-4 py-2 text-xs">ДЕЛО ОТКРЫТО</div></div>
+        </div>
+        <div class="md:col-span-8">
+          <div class="serif text-base md:text-lg leading-relaxed text-bright space-y-3">
+            <p class="first-letter:font-black first-letter:text-5xl first-letter:mr-2 first-letter:float-left first-letter:leading-none">
+              Настоящее дело находится в стадии заполнения. Ниже приведены сведения, подшитые к архивному экземпляру на момент публикации.
+            </p>
+          </div>
         </div>
       </div>
 
-    </div>
-  </div>
-
-  <!-- QUESTIONNAIRE -->
-  <div class="mt-6 pt-4 hr-thick">
-    <div class="kicker text-[10px] text-bright mb-3">АНКЕТА</div>
-    <div class="column-2 type text-sm">
-      <p class="mb-2"><span class="font-bold text-bright">Магические способности:</span> <span class="text-dim">[уточняется]</span></p>
-      <p class="mb-2"><span class="font-bold text-bright">Образование:</span> <span class="text-dim">Высшее юридическое (Сорбонна, Париж)</span></p>
-      <p class="mb-2"><span class="font-bold text-bright">Семейное положение:</span> <span class="text-dim">Незамужем</span></p>
-      <p class="mb-2"><span class="font-bold text-bright">Примечания директора:</span> <span class="text-dim">[уточняются]</span></p>
-    </div>
-  </div>
-
-<!-- ============ DIVIDER ============ -->
-<div class="hr-double my-8"></div>
-<div class="text-center kicker text-[10px] text-dim mb-8">· · · ПОСТУПИЛО НОВОЕ ДЕЛО · · ·</div>
-
-<!-- ============================================================
-     ДОСЬЕ №4 — ДЖЕФФРИ МОНТГОМЕРИ
-============================================================ -->
-<section id="jeffrey">
-
-  <div class="kicker text-[10px] text-center text-dim mb-1">ДОСЬЕ № 0117-В · ЛИЧНОЕ ДЕЛО БЮРО</div>
-
-  <h2 class="serif font-black text-center text-bright text-4xl md:text-6xl leading-none mb-2">
-    Джеффри Монтгомери
-  </h2>
-  <div class="serif italic text-center text-sm md:text-base text-dim mb-3">
-    Служба в структурах Бюро · р. 1898
-  </div>
-
-  <div class="hr-thick mb-1"></div>
-  <div class="hr-thin mb-4"></div>
-
-  <!-- MAIN GRID -->
-  <div class="grid md:grid-cols-12 gap-5">
-
-    <!-- PHOTO COLUMN -->
-    <div class="md:col-span-4">
-      <div class="photo-frame">
-        <div class="w-full aspect-[3/4] bg-[#c8bfa8] flex items-center justify-center border border-[#1a1a1a]">
-          <span class="type text-xs text-dim">[ФОТОГРАФИЯ НЕ ПРИЛОЖЕНА]</span>
-        </div>
-      </div>
-      <div class="dateline text-[10px] text-dim text-center mt-2 italic">
-        Фотография подшита к делу
-      </div>
-
-      <div class="mt-4 flex justify-center">
-        <div class="stamp stamp-black px-4 py-2 text-xs">ДЕЛО ОТКРЫТО</div>
-      </div>
-    </div>
-
-    <!-- TEXT COLUMN -->
-    <div class="md:col-span-8">
-      <div class="serif text-base md:text-lg leading-relaxed text-bright space-y-3">
-        <p class="first-letter:font-black first-letter:text-5xl first-letter:mr-2 first-letter:float-left first-letter:leading-none">
-          Настоящее дело находится в стадии заполнения. Ниже приведены сведения, подшитые к архивному экземпляру на момент публикации.
-        </p>
-      </div>
-    </div>
-  </div>
-
-  <!-- DETAILS BLOCK — 3 COLUMNS -->
-  <div class="mt-6 pt-4 hr-thick">
-    <div class="grid md:grid-cols-3 gap-6">
-
-      <div>
-        <div class="kicker text-[10px] text-bright mb-2">ОСНОВНЫЕ СВЕДЕНИЯ</div>
-        <div class="hr-thin mb-2"></div>
-        <div class="type text-sm space-y-2">
-          <p><span class="font-bold text-bright">Имя:</span> Джеффри Роберт Монтгомери</p>
-          <p><span class="font-bold text-bright">Место рождения:</span> Гринвилл, округ Батлер, Алабама, США</p>
-          <p><span class="font-bold text-bright">Год рождения:</span> 1898</p>
+      <div class="mt-6 pt-4 hr-thick">
+        <div class="grid md:grid-cols-3 gap-6">
+          <div>
+            <div class="kicker text-[10px] text-bright mb-2">ОСНОВНЫЕ СВЕДЕНИЯ</div><div class="hr-thin mb-2"></div>
+            <div class="type text-sm space-y-2">
+              <p><span class="font-bold text-bright">Имя:</span> Джеффри Роберт Монтгомери</p>
+              <p><span class="font-bold text-bright">Место рождения:</span> Гринвилл, округ Батлер, Алабама, США</p>
+              <p><span class="font-bold text-bright">Год рождения:</span> 1898</p>
+            </div>
+          </div>
+          <div>
+            <div class="kicker text-[10px] text-bright mb-2">СЛУЖЕБНЫЕ ДАННЫЕ</div><div class="hr-thin mb-2"></div>
+            <div class="type text-sm space-y-2">
+              <p><span class="font-bold text-bright">Род деятельности:</span> Служба в структурах Бюро</p>
+              <p><span class="font-bold text-bright">Статус мага:</span> Лицензия III класса, №0117-В</p>
+            </div>
+          </div>
+          <div>
+            <div class="kicker text-[10px] text-bright mb-2">СТАТУС ДЕЛА</div><div class="hr-thin mb-2"></div>
+            <div class="type text-sm space-y-2">
+              <p class="stamp text-red-800 text-sm">ОТКРЫТО</p>
+              <p class="text-xs text-dim">Досье в стадии заполнения.</p>
+            </div>
+          </div>
         </div>
       </div>
 
-      <div>
-        <div class="kicker text-[10px] text-bright mb-2">СЛУЖЕБНЫЕ ДАННЫЕ</div>
-        <div class="hr-thin mb-2"></div>
-        <div class="type text-sm space-y-2">
-          <p><span class="font-bold text-bright">Род деятельности:</span> Служба в структурах Бюро</p>
-          <p><span class="font-bold text-bright">Статус мага:</span> Лицензия III класса, №0117-В</p>
+      <div class="mt-6 pt-4 hr-thick">
+        <div class="kicker text-[10px] text-bright mb-3">АНКЕТА</div>
+        <div class="column-2 type text-sm">
+          <p class="mb-2"><span class="font-bold text-bright">Магические способности:</span> <span class="text-dim">[уточняется]</span></p>
+          <p class="mb-2">
+            <span class="font-bold text-bright">Образование:</span> 
+            <span class="text-dim relative inline-block">
+              <span class="line-through decoration-2 decoration-stone-600 opacity-60">Незаконченное среднее</span>
+              <span class="absolute left-0 -top-1 w-full text-center text-bright font-serif italic text-base tracking-widest -rotate-3" style="text-shadow: 1px 1px 0 #e8dfc8, -1px -1px 0 #e8dfc8, 1px -1px 0 #e8dfc8, -1px 1px 0 #e8dfc8;">Гарвард</span>
+            </span>
+          </p>
+          <p class="mb-2"><span class="font-bold text-bright">Семейное положение:</span> <span class="text-dim">Не женат</span></p>
+        </div>
+      </div>
+    </section>
+
+    <div class="hr-double my-8"></div>
+    <div class="text-center kicker text-[10px] text-dim mb-8">· · · ПОСТУПИЛО НОВОЕ ДЕЛО · · ·</div>
+
+    <!-- ============================================================
+         ДОСЬЕ №5 — БЕРНАДЕТТ ВАЛЬТЕР
+    ============================================================ -->
+    <section id="bernadette">
+      <div class="kicker text-[10px] text-center text-dim mb-1">ДОСЬЕ № 0118-Б · ЛИЧНОЕ ДЕЛО БЮРО</div>
+      <h2 class="serif font-black text-center text-bright text-4xl md:text-6xl leading-none mb-2">Бернадетт Вальтер</h2>
+      <div class="serif italic text-center text-sm md:text-base text-dim mb-3">Служба в структурах Бюро · р. 1820</div>
+      <div class="hr-thick mb-1"></div>
+      <div class="hr-thin mb-4"></div>
+
+      <div class="grid md:grid-cols-12 gap-5">
+        <div class="md:col-span-4">
+          <div class="photo-frame">
+            <img src="https://i.postimg.cc/j2qDCyjT/bernadette.jpg" alt="Бернадетт Вальтер" class="w-full aspect-[3/4] object-cover photo-bw">
+          </div>
+          <div class="dateline text-[10px] text-dim text-center mt-2 italic">Фотография подшита к делу</div>
+          <div class="mt-4 flex justify-center"><div class="stamp stamp-black px-4 py-2 text-xs">ДЕЛО ОТКРЫТО</div></div>
+        </div>
+        <div class="md:col-span-8">
+          <div class="serif text-base md:text-lg leading-relaxed text-bright space-y-3">
+            <p class="first-letter:font-black first-letter:text-5xl first-letter:mr-2 first-letter:float-left first-letter:leading-none">
+              Настоящее дело находится в стадии заполнения. Ниже приведены сведения, подшитые к архивному экземпляру на момент публикации.
+            </p>
+          </div>
         </div>
       </div>
 
-      <div>
-        <div class="kicker text-[10px] text-bright mb-2">СТАТУС ДЕЛА</div>
-        <div class="hr-thin mb-2"></div>
-        <div class="type text-sm space-y-2">
-          <p class="stamp text-red-800 text-sm">ОТКРЫТО</p>
-          <p class="text-xs text-dim">Досье в стадии заполнения. Инспектору поручено дополнить материал в срок до 30 дней.</p>
+      <div class="mt-6 pt-4 hr-thick">
+        <div class="grid md:grid-cols-3 gap-6">
+          <div>
+            <div class="kicker text-[10px] text-bright mb-2">ОСНОВНЫЕ СВЕДЕНИЯ</div><div class="hr-thin mb-2"></div>
+            <div class="type text-sm space-y-2">
+              <p><span class="font-bold text-bright">Имя:</span> Бернадетт Альруна Вальтер</p>
+              <p><span class="font-bold text-bright">Место рождения:</span> Чарльстон, Южная Каролина, США</p>
+              <p><span class="font-bold text-bright">Год рождения:</span> 1820</p>
+            </div>
+          </div>
+          <div>
+            <div class="kicker text-[10px] text-bright mb-2">СЛУЖЕБНЫЕ ДАННЫЕ</div><div class="hr-thin mb-2"></div>
+            <div class="type text-sm space-y-2">
+              <p><span class="font-bold text-bright">Род деятельности:</span> Служба в структурах Бюро</p>
+              <p><span class="font-bold text-bright">Статус мага:</span> Лицензия II класса</p>
+            </div>
+          </div>
+          <div>
+            <div class="kicker text-[10px] text-bright mb-2">СТАТУС ДЕЛА</div><div class="hr-thin mb-2"></div>
+            <div class="type text-sm space-y-2">
+              <p class="stamp text-red-800 text-sm">ОТКРЫТО</p>
+              <p class="text-xs text-dim">Досье в стадии заполнения.</p>
+            </div>
+          </div>
         </div>
       </div>
 
-    </div>
-  </div>
-
-  <!-- QUESTIONNAIRE -->
-  <div class="mt-6 pt-4 hr-thick">
-    <div class="kicker text-[10px] text-bright mb-3">АНКЕТА</div>
-    <div class="column-2 type text-sm">
-      <p class="mb-2"><span class="font-bold text-bright">Магические способности:</span> <span class="text-dim">[уточняется]</span></p>
-      
-      <!-- хуйня -->
-      <p class="mb-2">
-        <span class="font-bold text-bright">Образование:</span> 
-        <span class="text-dim relative inline-block">
-          <span class="line-through decoration-2 decoration-stone-600 opacity-60">Незаконченное среднее</span>
-          <span class="absolute left-0 -top-1 w-full text-center text-bright font-serif italic text-base tracking-widest -rotate-3" style="text-shadow: 1px 1px 0 #e8dfc8, -1px -1px 0 #e8dfc8, 1px -1px 0 #e8dfc8, -1px 1px 0 #e8dfc8;">Гарвард</span>
-        </span>
-      </p>
-
-      <p class="mb-2"><span class="font-bold text-bright">Семейное положение:</span> <span class="text-dim">Не женат</span></p>
-    </div>
-  </div>
-  
-</section>
-
-<!-- ============ DIVIDER ============ -->
-<div class="hr-double my-8"></div>
-<div class="text-center kicker text-[10px] text-dim mb-8">· · · ПОСТУПИЛО НОВОЕ ДЕЛО · · ·</div>
-
-<!-- ============================================================
-     ДОСЬЕ №5 — БЕРНАДЕТТ ВАЛЬТЕР
-============================================================ -->
-<section id="bernadette">
-  <div class="kicker text-[10px] text-center text-dim mb-1">ДОСЬЕ № 0118-Б · ЛИЧНОЕ ДЕЛО БЮРО</div>
-  <h2 class="serif font-black text-center text-bright text-4xl md:text-6xl leading-none mb-2">Бернадетт Вальтер</h2>
-  <div class="serif italic text-center text-sm md:text-base text-dim mb-3">Служба в структурах Бюро · р. 1820</div>
-  <div class="hr-thick mb-1"></div>
-  <div class="hr-thin mb-4"></div>
-
-  <!-- MAIN GRID -->
-  <div class="grid md:grid-cols-12 gap-5">
-    <div class="md:col-span-4">
-      <div class="photo-frame">
-        <div class="w-full aspect-[3/4] bg-[#c8bfa8] flex items-center justify-center border border-[#1a1a1a]">
-          <span class="type text-xs text-dim">[ФОТОГРАФИЯ НЕ ПРИЛОЖЕНА]</span>
+      <div class="mt-6 pt-4 hr-thick">
+        <div class="kicker text-[10px] text-bright mb-3">АНКЕТА</div>
+        <div class="column-2 type text-sm">
+          <p class="mb-2"><span class="font-bold text-bright">Магические способности:</span> <span class="text-dim">Медиум</span></p>
+          <p class="mb-2"><span class="font-bold text-bright">Образование:</span> <span class="text-dim">—</span></p>
+          <p class="mb-2"><span class="font-bold text-bright">Семейное положение:</span> <span class="text-dim">Вдова</span></p>
         </div>
       </div>
-      <div class="dateline text-[10px] text-dim text-center mt-2 italic">Фотография подшита к делу</div>
-      <div class="mt-4 flex justify-center">
-        <div class="stamp stamp-black px-4 py-2 text-xs">ДЕЛО ОТКРЫТО</div>
-      </div>
-    </div>
-    <div class="md:col-span-8">
-      <div class="serif text-base md:text-lg leading-relaxed text-bright space-y-3">
-        <p class="first-letter:font-black first-letter:text-5xl first-letter:mr-2 first-letter:float-left first-letter:leading-none">
-          Настоящее дело находится в стадии заполнения. Ниже приведены сведения, подшитые к архивному экземпляру на момент публикации.
-        </p>
-      </div>
-    </div>
-  </div>
+    </section>
 
-  <!-- DETAILS BLOCK -->
-  <div class="mt-6 pt-4 hr-thick">
-    <div class="grid md:grid-cols-3 gap-6">
-      <div>
-        <div class="kicker text-[10px] text-bright mb-2">ОСНОВНЫЕ СВЕДЕНИЯ</div>
-        <div class="hr-thin mb-2"></div>
-        <div class="type text-sm space-y-2">
-          <p><span class="font-bold text-bright">Имя:</span> Бернадетт Альруна Вальтер</p>
-          <p><span class="font-bold text-bright">Место рождения:</span> Чарльстон, Южная Каролина, США</p>
-          <p><span class="font-bold text-bright">Год рождения:</span> 1820</p>
-        </div>
-      </div>
-      <div>
-        <div class="kicker text-[10px] text-bright mb-2">СЛУЖЕБНЫЕ ДАННЫЕ</div>
-        <div class="hr-thin mb-2"></div>
-        <div class="type text-sm space-y-2">
-          <p><span class="font-bold text-bright">Род деятельности:</span> Служба в структурах Бюро</p>
-          <p><span class="font-bold text-bright">Статус мага:</span> Лицензия II класса</p>
-        </div>
-      </div>
-      <div>
-        <div class="kicker text-[10px] text-bright mb-2">СТАТУС ДЕЛА</div>
-        <div class="hr-thin mb-2"></div>
-        <div class="type text-sm space-y-2">
-          <p class="stamp text-red-800 text-sm">ОТКРЫТО</p>
-          <p class="text-xs text-dim">Досье в стадии заполнения. Инспектору поручено дополнить материал в срок до 30 дней.</p>
-        </div>
-      </div>
-    </div>
-  </div>
+    <div class="hr-double my-8"></div>
+    <div class="text-center kicker text-[10px] text-dim mb-8">· · · ПОСТУПИЛО НОВОЕ ДЕЛО · · ·</div>
 
-  <!-- QUESTIONNAIRE -->
-  <div class="mt-6 pt-4 hr-thick">
-    <div class="kicker text-[10px] text-bright mb-3">АНКЕТА</div>
-    <div class="column-2 type text-sm">
-      <p class="mb-2"><span class="font-bold text-bright">Магические способности:</span> <span class="text-dim">Медиум</span></p>
-      <p class="mb-2"><span class="font-bold text-bright">Образование:</span> <span class="text-dim">—</span></p>
-      <p class="mb-2"><span class="font-bold text-bright">Семейное положение:</span> <span class="text-dim">Вдова</span></p>
-    </div>
-  </div>
-</section>
-    
-    <!-- ============ FOOTER ============ -->
+    <!-- ============================================================
+         ДОСЬЕ №6 — ГИНТАРЕ ФОН ЭССЕН
+    ============================================================ -->
+    <section id="gintare">
+      <div class="kicker text-[10px] text-center text-dim mb-1">ДОСЬЕ № 0119-В · ЛИЧНОЕ ДЕЛО БЮРО</div>
+      <h2 class="serif font-black text-center text-bright text-4xl md:text-6xl leading-none mb-2">Гинтаре фон Эссен</h2>
+      <div class="serif italic text-center text-sm md:text-base text-dim mb-3">Работник химического завода · р. 1823</div>
+      <div class="hr-thick mb-1"></div>
+      <div class="hr-thin mb-4"></div>
+
+      <div class="grid md:grid-cols-12 gap-5">
+        <div class="md:col-span-4">
+          <div class="photo-frame">
+            <img src="https://i.postimg.cc/2yJCmWLY/gintare.jpg" alt="Гинтаре фон Эссен" class="w-full aspect-[3/4] object-cover photo-bw">
+          </div>
+          <div class="dateline text-[10px] text-dim text-center mt-2 italic">Фотография подшита к делу</div>
+          <div class="mt-4 flex justify-center"><div class="stamp stamp-black px-4 py-2 text-xs">ДЕЛО ОТКРЫТО</div></div>
+        </div>
+        <div class="md:col-span-8">
+          <div class="serif text-base md:text-lg leading-relaxed text-bright space-y-3">
+            <p class="first-letter:font-black first-letter:text-5xl first-letter:mr-2 first-letter:float-left first-letter:leading-none">
+              Настоящее дело находится в стадии заполнения. Ниже приведены сведения, подшитые к архивному экземпляру на момент публикации.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="mt-6 pt-4 hr-thick">
+        <div class="grid md:grid-cols-3 gap-6">
+          <div>
+            <div class="kicker text-[10px] text-bright mb-2">ОСНОВНЫЕ СВЕДЕНИЯ</div><div class="hr-thin mb-2"></div>
+            <div class="type text-sm space-y-2">
+              <p><span class="font-bold text-bright">Имя:</span> Гинтаре фон Эссен</p>
+              <p><span class="font-bold text-bright">Место рождения:</span> Рига, Лифляндская губерния, Российская Империя</p>
+              <p><span class="font-bold text-bright">Год рождения:</span> 1823</p>
+            </div>
+          </div>
+          <div>
+            <div class="kicker text-[10px] text-bright mb-2">СЛУЖЕБНЫЕ ДАННЫЕ</div><div class="hr-thin mb-2"></div>
+            <div class="type text-sm space-y-2">
+              <p><span class="font-bold text-bright">Род деятельности:</span> Рабочая на хим. заводе</p>
+              <p><span class="font-bold text-bright">Статус мага:</span> Лицензия III класса, №..</p>
+            </div>
+          </div>
+          <div>
+            <div class="kicker text-[10px] text-bright mb-2">СТАТУС ДЕЛА</div><div class="hr-thin mb-2"></div>
+            <div class="type text-sm space-y-2">
+              <p class="stamp text-red-800 text-sm">ОТКРЫТО</p>
+              <p class="text-xs text-dim">Досье в стадии заполнения.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="mt-6 pt-4 hr-thick">
+        <div class="kicker text-[10px] text-bright mb-3">АНКЕТА</div>
+        <div class="column-2 type text-sm">
+          <p class="mb-2"><span class="font-bold text-bright">Магические способности:</span> <span class="text-dim">Пирокинез</span></p>
+          <p class="mb-2"><span class="font-bold text-bright">Образование:</span> <span class="text-dim">—</span></p>
+          <p class="mb-2"><span class="font-bold text-bright">Семейное положение:</span> <span class="text-dim">Вдова</span></p>
+        </div>
+      </div>
+    </section>
+
+    <div class="hr-double my-8"></div>
+    <div class="text-center kicker text-[10px] text-dim mb-8">· · · ПОСТУПИЛО НОВОЕ ДЕЛО · · ·</div>
+
+    <!-- ============================================================
+         ДОСЬЕ №7 — СОКОЛОВ ДМИТРИЙ
+    ============================================================ -->
+    <section id="dmitry">
+      <div class="kicker text-[10px] text-center text-dim mb-1">ДОСЬЕ № 0120-В · ЛИЧНОЕ ДЕЛО БЮРО</div>
+      <h2 class="serif font-black text-center text-bright text-4xl md:text-6xl leading-none mb-2">Соколов Дмитрий</h2>
+      <div class="serif italic text-center text-sm md:text-base text-dim mb-3">Работник химического завода · р. 1906</div>
+      <div class="hr-thick mb-1"></div>
+      <div class="hr-thin mb-4"></div>
+
+      <div class="grid md:grid-cols-12 gap-5">
+        <div class="md:col-span-4">
+          <div class="photo-frame">
+            <img src="https://i.postimg.cc/d3Zz2xDY/dmitry.jpg" alt="Дмитрий Соколов" class="w-full aspect-[3/4] object-cover photo-bw">
+          </div>
+          <div class="dateline text-[10px] text-dim text-center mt-2 italic">Фотография подшита к делу</div>
+          <div class="mt-4 flex justify-center"><div class="stamp stamp-black px-4 py-2 text-xs">ДЕЛО ОТКРЫТО</div></div>
+        </div>
+        <div class="md:col-span-8">
+          <div class="serif text-base md:text-lg leading-relaxed text-bright space-y-3">
+            <p class="first-letter:font-black first-letter:text-5xl first-letter:mr-2 first-letter:float-left first-letter:leading-none">
+              Настоящее дело находится в стадии заполнения. Ниже приведены сведения, подшитые к архивному экземпляру на момент публикации.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="mt-6 pt-4 hr-thick">
+        <div class="grid md:grid-cols-3 gap-6">
+          <div>
+            <div class="kicker text-[10px] text-bright mb-2">ОСНОВНЫЕ СВЕДЕНИЯ</div><div class="hr-thin mb-2"></div>
+            <div class="type text-sm space-y-2">
+              <p><span class="font-bold text-bright">Имя:</span> Соколов Дмитрий Владимирович</p>
+              <p><span class="font-bold text-bright">Место рождения:</span> Эшвуд, Огайо, США</p>
+              <p><span class="font-bold text-bright">Год рождения:</span> 1906</p>
+            </div>
+          </div>
+          <div>
+            <div class="kicker text-[10px] text-bright mb-2">СЛУЖЕБНЫЕ ДАННЫЕ</div><div class="hr-thin mb-2"></div>
+            <div class="type text-sm space-y-2">
+              <p><span class="font-bold text-bright">Род деятельности:</span> Работник на хим. заводе</p>
+              <p><span class="font-bold text-bright">Статус мага:</span> Лицензия III класса, №..</p>
+            </div>
+          </div>
+          <div>
+            <div class="kicker text-[10px] text-bright mb-2">СТАТУС ДЕЛА</div><div class="hr-thin mb-2"></div>
+            <div class="type text-sm space-y-2">
+              <p class="stamp text-red-800 text-sm">ОТКРЫТО</p>
+              <p class="text-xs text-dim">Досье в стадии заполнения.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="mt-6 pt-4 hr-thick">
+        <div class="kicker text-[10px] text-bright mb-3">АНКЕТА</div>
+        <div class="column-2 type text-sm">
+          <p class="mb-2"><span class="font-bold text-bright">Магические способности:</span> <span class="text-dim">Телекинез</span></p>
+          <p class="mb-2"><span class="font-bold text-bright">Образование:</span> <span class="text-dim">—</span></p>
+          <p class="mb-2"><span class="font-bold text-bright">Семейное положение:</span> <span class="text-dim">Не женат</span></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
     <div class="hr-double mt-10"></div>
     <div class="dateline text-[10px] text-dim text-center py-4 leading-relaxed">
       THE ASHWOOD TRIBUNE · ЭШВУД ТРИБЬЮН · АРХИВНЫЙ ВЫПУСК БЮРО МАГИЧЕСКОГО РЕГУЛИРОВАНИЯ<br>
