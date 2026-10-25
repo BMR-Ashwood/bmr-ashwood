@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Отдел кадров — Эшвуд Трибьюн</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Courier+Prime:wght@400;700&family=Special+Elite&family=UnifrakturCook:wght@700&display=swap" rel="stylesheet">
+<style>
+  body {
+    background: #1f1c18;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4'/%3E%3C/filter%3E%3Crect width='200' height='200' filter='url(%23n)' opacity='0.15'/%3E%3C/svg%3E");
+    color: #1a1a1a;
+  }
+  .paper {
+    background: #e8dfc8;
+    background-image:
+      radial-gradient(ellipse at 15% 10%, rgba(140,110,70,0.20) 0%, transparent 42%),
+      radial-gradient(ellipse at 85% 75%, rgba(120,90,55,0.24) 0%, transparent 45%),
+      radial-gradient(ellipse at 50% 50%, rgba(90,70,40,0.08) 0%, transparent 40%),
+      url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='5'/%3E%3C/filter%3E%3Crect width='300' height='300' filter='url(%23n)' opacity='0.09'/%3E%3C/svg%3E");
+    box-shadow: 0 15px 50px rgba(0,0,0,0.75), inset 0 0 80px rgba(90,60,30,0.18);
+  }
+  .serif { font-family: 'Playfair Display', serif; }
+  .type { font-family: 'Courier Prime', monospace; }
+  .stamp { font-family: 'Special Elite', cursive; }
+  .blackletter { font-family: 'UnifrakturCook', 'Playfair Display', serif; }
+  .text-dim { color: #5a4a30; }
+  .text-bright { color: #0a0a0a; }
+  .hr-thin { border-top: 1px solid #1a1a1a; }
+  .hr-thick { border-top: 3px solid #1a1a1a; }
+  .hr-double { border-top: 5px double #1a1a1a; }
+  .hr-dots { border-top: 2px dotted #5a4a30; }
+  .stamp-red { color: #8b1a1a; border: 2px double #8b1a1a; transform: rotate(-7deg); opacity: 0.92; }
+  .stamp-green { color: #2e4a2e; border: 2px double #2e4a2e; transform: rotate(-5deg); opacity: 0.9; }
+  .banner-black { background: #0a0a0a; color: #e8dfc8; }
+  .kicker { font-family: 'Special Elite', cursive; letter-spacing: 0.2em; }
+  .dateline { font-family: 'Courier Prime', monospace; }
+</style>
+</head>
+<body>
+
+<div class="max-w-5xl mx-auto px-2 md:px-4 py-6 md:py-10">
+
+  <a href="index.html" class="type text-xs text-stone-400 hover:text-amber-200 mb-4 inline-block">← НА ГЛАВНУЮ</a>
+
+  <!-- ================= NEWSPAPER ================= -->
+  <div class="paper p-5 md:p-10">
+
+    <!-- ==== MASTHEAD ==== -->
+    <header class="text-center mb-6">
+      <div class="dateline text-[10px] flex justify-between text-dim pb-2">
+        <span>ОТДЕЛЕНИЕ ЭШВУД · ШТАТ ОГАЙО</span>
+        <span>ОФИЦИАЛЬНЫЙ ВЫПУСК</span>
+      </div>
+      <div class="hr-thick"></div>
+      <h1 class="blackletter text-4xl md:text-6xl text-bright leading-none py-3">The Ashwood Tribune</h1>
+      <div class="dateline text-[11px] tracking-[0.35em] text-dim">ЭШВУД ТРИБЬЮН · ОТДЕЛ КАДРОВ</div>
+      <div class="hr-thick mt-3"></div>
+      <div class="dateline text-[10px] flex justify-between text-dim pt-2">
+        <span>ОСНОВАНА В 1887 г.</span>
+        <span>12 МАРТА 1922 г.</span>
+        <span>НАБОР НА СЛУЖБУ</span>
+      </div>
+      <div class="hr-double mt-2"></div>
+    </header>
+
+    <div class="kicker text-[10px] text-center text-dim mb-1">ОТДЕЛ КАДРОВ · ОФИЦИАЛЬНЫЙ СПИСОК ДОЛЖНОСТЕЙ</div>
+    <h2 class="serif font-black text-center text-bright text-3xl md:text-5xl leading-none mb-3">Служба в Бюро</h2>
+    <div class="hr-thick mb-1"></div>
+    <div class="hr-thin mb-4"></div>
+
+    <div class="banner-black py-2 px-4 text-center mb-6">
+      <span class="stamp text-sm tracking-widest">ВНИМАНИЕ: НАЛИЧИЕ СУДИМОСТЕЙ НЕДОПУСТИМО</span>
+    </div>
+
+    <div class="serif text-base md:text-lg leading-relaxed text-bright mb-8 text-center max-w-3xl mx-auto">
+      Бюро Магического Регулирования объявляет набор кандидатов на службу. Требуются лица с твёрдым характером, готовые поддерживать порядок и закон. Все должности подразумевают полную занятость и соблюдение государственной тайны.
+    </div>
+
+    <!-- ============================================================
+         ВАКАНСИИ
+    ============================================================ -->
+    <div class="space-y-6">
+
+      <!-- СТАРШИЙ ИНСПЕКТОР (ЗАНЯТО) -->
+      <section class="border border-[#1a1a1a] p-5 relative bg-[#dcd3bb] opacity-90">
+        <div class="stamp stamp-green absolute top-4 right-4 px-3 py-1 text-xs bg-[#e8dfc8]">ЗАНЯТО</div>
+        <h3 class="serif font-black text-xl text-bright mb-1">СТАРШИЙ ИНСПЕКТОР</h3>
+        <div class="kicker text-[10px] text-dim mb-3">1 ШТАТНАЯ ЕДИНИЦА</div>
+        <div class="type text-sm space-y-2">
+          <p><span class="font-bold text-bright">Обязанности:</span> Сбор и обработка отчётов от младших инспекторов. Оформление при Бюро (контроль ежеквартальных явок). Распределение участков. Ведение особо важных дел.</p>
+          <p class="text-xs text-dim italic mt-2 border-t border-[#1a1a1a] pt-2">Должность занята: Бернадетт А. Вальтер.</p>
+        </div>
+      </section>
+
+      <!-- ИНСПЕКТОР (ВАКАНСИЯ) -->
+      <section class="border border-[#1a1a1a] p-5 relative">
+        <div class="stamp stamp-red absolute top-4 right-4 px-3 py-1 text-xs bg-[#e8dfc8]">ВАКАНСИЯ</div>
+        <h3 class="serif font-black text-xl text-bright mb-1">ИНСПЕКТОР</h3>
+        <div class="kicker text-[10px] text-dim mb-3">3 ШТАТНЫЕ ЕДИНИЦЫ</div>
+        <div class="type text-sm space-y-2">
+          <p><span class="font-bold text-bright">Обязанности:</span> Персональный надзор за отдельными личностями (маги III–IV классов). Ведение дел по наводкам старшего инспектора. Проведение внезапных проверок и задержаний. Составление протоколов.</p>
+        </div>
+      </section>
+
+      <!-- МЛАДШИЙ ИНСПЕКТОР (ВАКАНСИЯ) -->
+      <section class="border border-[#1a1a1a] p-5 relative">
+        <div class="stamp stamp-red absolute top-4 right-4 px-3 py-1 text-xs bg-[#e8dfc8]">ВАКАНСИЯ</div>
+        <h3 class="serif font-black text-xl text-bright mb-1">МЛАДШИЙ ИНСПЕКТОР</h3>
+        <div class="kicker text-[10px] text-dim mb-3">4 ШТАТНЫЕ ЕДИНИЦЫ</div>
+        <div class="type text-sm space-y-2">
+          <p><span class="font-bold text-bright">Обязанности:</span> Наблюдение за списком лиц, проживающих на закреплённом районе. Проведение плановых осмотров жилищ. Проверка наличия и актуальности магических лицензий. Первичный сбор жалоб от населения.</p>
+        </div>
+      </section>
+
+      <!-- АРХИВАРИУС (ВАКАНСИЯ) -->
+      <section class="border border-[#1a1a1a] p-5 relative">
+        <div class="stamp stamp-red absolute top-4 right-4 px-3 py-1 text-xs bg-[#e8dfc8]">ВАКАНСИЯ</div>
+        <h3 class="serif font-black text-xl text-bright mb-1">АРХИВАРИУС</h3>
+        <div class="kicker text-[10px] text-dim mb-3">1 ШТАТНАЯ ЕДИНИЦА</div>
+        <div class="type text-sm space-y-2">
+          <p><span class="font-bold text-bright">Обязанности:</span> Ведение реестра магов. Подшивка и хранение личных дел. Выдача справок и архивных копий. Контроль за целостностью печатей. Работа с грифом «Секретно».</p>
+        </div>
+      </section>
+
+      <!-- АГЕНТ -->
+      <section class="border border-[#1a1a1a] p-5 relative mt-8">
+        <div class="stamp stamp-red absolute top-4 right-4 px-3 py-1 text-xs bg-[#e8dfc8]">???</div>
+        <h3 class="serif font-black text-lg text-bright mb-1">СПЕЦИАЛЬНЫЕ ПОРУЧЕНИЯ</h3>
+        <div class="kicker text-[9px] text-dim mb-3">ШТАТНОЕ РАСПИСАНИЕ ЗАСЕКРЕЧЕНО</div>
+        <div class="type text-[11px] leading-tight text-dim space-y-2 text-justify">
+          <p>Кандидаты, обладающие необходимыми навыками и желающие проходить службу в закрытом режиме, могут подать заявку в Отдел Кадров. <span class="italic">Окончательное решение о допуске принимается лично Директором отделения.</span></p>
+        </div>
+      </section>
+
+    </div>
+
+    <!-- ============ КАК ПОДАТЬ ЗАЯВКУ ============ -->
+    <div class="hr-double mt-10 mb-6"></div>
+    
+    <div class="text-center">
+      <div class="kicker text-[10px] text-dim mb-2">ПОРЯДОК ОФОРМЛЕНИЯ</div>
+      <h3 class="serif font-black text-2xl text-bright mb-4">Как подать заявку</h3>
+      <p class="type text-sm max-w-2xl mx-auto mb-6 leading-relaxed">
+        Кандидатам необходимо обратиться в Отдел Кадров для заполнения Формы №4 «Заявление о приёме на государственную магическую службу». При себе иметь лицензию (при наличии) и рекомендательное письмо.
+      </p>
+      
+      <a href="https://vk.ru/topic-241864994_67975626" target="_blank" class="inline-block stamp text-sm text-[#e8dfc8] border-2 border-[#1a1a1a] bg-[#1a1a1a] px-6 py-3 hover:bg-[#3a2f20] transition">
+        ОБРАТИТЬСЯ В ОТДЕЛ КАДРОВ →
+      </a>
+      
+      <p class="type text-[10px] text-dim mt-4 italic">Внешний канал связи БМР · Открывается в новой вкладке</p>
+    </div>
+
+    <!-- FOOTER -->
+    <div class="hr-double mt-10"></div>
+    <div class="dateline text-[10px] text-dim text-center py-4 leading-relaxed">
+      THE ASHWOOD TRIBUNE · ЭШВУД ТРИБЬЮН · ОТДЕЛ КАДРОВ<br>
+      Отделение Эшвуд · ул. Кленовая, 14 · Огайо · 1922 г.
+    </div>
+
+  </div>
+
+</div>
+
+</body>
+</html>
