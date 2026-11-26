@@ -78,61 +78,63 @@
       <p class="type text-xs text-dim mt-3">Отделение города Эшвуд · Юрисдикция: штат Огайо · Основано 1887 г.</p>
     </header>
 
-    <!-- DEATH DOSSIER -->
-    <section class="mb-10">
-      <div class="kicker text-[10px] text-center text-dim mb-1">ДОСЬЕ ДИРЕКТОРА · ЛИЧНОЕ ДЕЛО БЮРО</div>
+    <!-- НЕКРОЛОГ МЕНДЕЛЯ -->
+    <section class="mb-10 mt-8">
+      <div class="kicker text-[10px] text-center text-dim mb-1">НЕКРОЛОГ · ПАМЯТИ ДИРЕКТОРА</div>
       <h2 class="serif font-black text-center text-bright text-4xl md:text-6xl leading-none mb-2">Грегор Мендель</h2>
       <div class="serif italic text-center text-sm md:text-base text-dim mb-3">Директор Бюро Магического Регулирования · Отделение Эшвуд · 1858–1922</div>
+      
       <div class="hr-thick mb-1"></div>
       <div class="hr-thin mb-4"></div>
-      <div class="banner-black py-2 px-4 text-center mb-5"><span class="stamp text-sm tracking-widest">СКОНЧАЛСЯ 11 МАРТА 1922 г.</span></div>
+      
+      <div class="banner-black py-2 px-4 text-center mb-6">
+        <span class="stamp text-sm tracking-widest">СКОНЧАЛСЯ 11 МАРТА 1922 г.</span>
+      </div>
 
-      <div class="grid md:grid-cols-12 gap-5">
+      <div class="grid md:grid-cols-12 gap-6 items-start">
+        <!-- Фото -->
         <div class="md:col-span-4">
-          <div class="photo-frame aspect-[3/4] flex items-center justify-center bg-gradient-to-b from-stone-400 to-stone-600">
-            <svg viewBox="0 0 100 100" class="w-32 h-32 text-stone-700" fill="currentColor">
-              <circle cx="50" cy="35" r="18"/>
-              <path d="M 15 95 Q 15 60 50 60 Q 85 60 85 95 Z"/>
-            </svg>
+          <div class="photo-frame">
+            <div class="w-full aspect-[3/4] bg-gradient-to-b from-stone-400 to-stone-600 flex items-center justify-center">
+              <svg viewBox="0 0 100 100" class="w-32 h-32 text-stone-700" fill="currentColor">
+                <circle cx="50" cy="35" r="18"/>
+                <path d="M 15 95 Q 15 60 50 60 Q 85 60 85 95 Z"/>
+              </svg>
+            </div>
           </div>
-          <div class="dateline text-[10px] text-dim text-center mt-2 italic">[ФОТОГРАФИЯ ИЗЪЯТА]</div>
-          <div class="mt-4 flex justify-center"><div class="stamp stamp-red px-4 py-2 text-xs">АРХИВ · ЗАКРЫТО</div></div>
+          <div class="dateline text-[10px] text-dim text-center mt-2 italic">[ФОТОГРАФИЯ ИЗЪЯТА ИЗ АРХИВА]</div>
         </div>
+        
+        <!-- Текст некролога -->
         <div class="md:col-span-8">
-          <div class="serif text-base md:text-lg leading-relaxed text-bright space-y-3">
-            <p class="firstletter">Бюро Магического Регулирования с прискорбием сообщает о кончине директора отделения Эшвуд. Тело обнаружено в служебном кабинете 11 марта, за 14 часов до подписания Протокола Гармонии.</p>
-            <p>Официальная причина — «сердечный приступ». Экспертиза магического фона <span class="bg-[#d4c9ac] px-1 italic">не проводилась</span>.</p>
-            <p class="stamp text-red-800 text-base mt-3">«Он был за день до величайшей реформы. За день.»<br><span class="type text-xs text-dim">— из частной переписки</span></p>
+          <div class="serif text-base md:text-lg leading-relaxed text-bright space-y-4">
+            <p class="firstletter">Бюро Магического Регулирования с глубоким прискорбием сообщает о безвременной кончине директора отделения Эшвуд. Тело было обнаружено в служебном кабинете утром 11 марта — всего за четырнадцать часов до момента, когда он должен был поставить свою подпись под Протоколом Гармонии.</p>
+            <p>Мистер Мендель был человеком редкой преданности делу. На протяжении тридцати пяти лет он стоял на страже порядка, совмещая строгость закона с глубоким пониманием нужд магического сообщества. Именно он стал инициатором и главным разработчиком Протокола, призванного положить конец десятилетиям подпольных практик.</p>
+            <p>Обстоятельства его смерти на момент публикации <span class="bg-[#d4c9ac] px-1 italic">остаются невыясненными</span>. Официальная причина — «сердечный приступ». Экспертиза магического фона, как подтвердили в Бюро, <span class="bg-[#d4c9ac] px-1 italic">не проводилась</span>.</p>
+            <p class="stamp text-red-800 text-base mt-4">«Он был за день до величайшей реформы. За день.»<br><span class="type text-xs text-dim">— из частной переписки</span></p>
           </div>
         </div>
       </div>
 
-      <div class="mt-6 pt-4 hr-thick">
-        <div class="grid md:grid-cols-3 gap-6">
+      <!-- Нижняя часть некролога -->
+      <div class="mt-8 pt-4 hr-thick">
+        <div class="grid md:grid-cols-2 gap-6">
           <div>
-            <div class="kicker text-[10px] text-bright mb-2">ОСНОВНЫЕ СВЕДЕНИЯ</div><div class="hr-thin mb-2"></div>
-            <div class="type text-sm space-y-2">
-              <p><span class="font-bold text-bright">Имя:</span> Грегор Мендель</p>
-              <p><span class="font-bold text-bright">Должность:</span> Директор БМР, отделение Эшвуд</p>
-              <p><span class="font-bold text-bright">Годы жизни:</span> 1858–1922</p>
-              <p><span class="font-bold text-bright">Статус мага:</span> Лицензия I класса, №0114-А</p>
+            <div class="kicker text-[10px] text-bright mb-2">КРАТКАЯ БИОГРАФИЯ</div><div class="hr-thin mb-2"></div>
+            <div class="column-2 type text-sm text-dim">
+              <p class="mb-2"><span class="font-bold text-bright">1887 —</span> Поступление на службу в Бюро.</p>
+              <p class="mb-2"><span class="font-bold text-bright">1894 —</span> Назначение инспектором III категории.</p>
+              <p class="mb-2"><span class="font-bold text-bright">1901 —</span> Повышение до старшего инспектора.</p>
+              <p class="mb-2"><span class="font-bold text-bright">1908 —</span> Назначение заместителем Директора.</p>
+              <p class="mb-2"><span class="font-bold text-bright">1915 —</span> Назначение Директором отделения Эшвуд.</p>
             </div>
           </div>
           <div>
-            <div class="kicker text-[10px] text-bright mb-2">ОБСТОЯТЕЛЬСТВА КОНЧИНЫ</div><div class="hr-thin mb-2"></div>
-            <div class="type text-sm space-y-2">
-              <p><span class="font-bold text-bright">Дата:</span> 11 марта 1922 г.</p>
-              <p><span class="font-bold text-bright">Место:</span> служебный кабинет</p>
-              <p><span class="font-bold text-bright">Причина:</span> официально — «сердечный приступ»</p>
-              <p><span class="font-bold text-bright">Экспертиза магического фона:</span> <span class="bg-[#d4c9ac] px-1">не проводилась</span></p>
+            <div class="kicker text-[10px] text-bright mb-2">ПАМЯТИ КОЛЛЕГИ</div><div class="hr-thin mb-2"></div>
+            <div class="serif italic text-sm text-bright leading-relaxed">
+              «Грегор был не просто руководителем. Он был тем, кто верил в нас, когда мы сами в себя не верили. Его кабинет всегда был открыт для тех, кто искал правды. Теперь его дверь закрыта навсегда.»
             </div>
-          </div>
-          <div>
-            <div class="kicker text-[10px] text-bright mb-2">СТАТУС ДЕЛА</div><div class="hr-thin mb-2"></div>
-            <div class="type text-sm space-y-2">
-              <p class="stamp text-red-800 text-sm">ЗАКРЫТО ПО ФАКТУ СМЕРТИ</p>
-              <p class="text-xs text-dim">Материалы подшиты и переданы в архив 12 марта 1922 г.</p>
-            </div>
+            <div class="dateline text-[10px] text-dim mt-2 text-right">— сотрудники отделения Эшвуд</div>
           </div>
         </div>
       </div>
@@ -154,20 +156,20 @@
       <div class="banner-black py-2 px-4 text-center my-4"><span class="stamp text-sm tracking-widest">СТАТУС: ПРИОСТАНОВЛЕН</span></div>
       <p class="type text-sm text-bright mb-4">Ввиду кончины инициатора и главного подписанта, Директора Г. Менделя, рассмотрение Протокола отложено на неопределённый срок.</p>
 
-      <div class="grid md:grid-cols-2 gap-3 type text-xs">
-        <div class="border border-stone-700 p-3 bg-[#d4c9ac]/40">
+      <div class="grid md:grid-cols-2 gap-4 type text-sm">
+        <div class="bg-[#d4c9ac]/40 p-3">
           <p class="font-bold mb-1 text-bright">§1. Новый Совет</p>
           <p class="text-dim">Создание коллегиального органа из 7 членов, включая 2 представителей нелицензированных практик.</p>
         </div>
-        <div class="border border-stone-700 p-3 bg-[#d4c9ac]/40">
+        <div class="bg-[#d4c9ac]/40 p-3">
           <p class="font-bold mb-1 text-bright">§2. Частичная легализация</p>
           <p class="text-dim">Разрешение бытовой магии I и II категорий без полной регистрации.</p>
         </div>
-        <div class="border border-stone-700 p-3 bg-[#d4c9ac]/40">
+        <div class="bg-[#d4c9ac]/40 p-3">
           <p class="font-bold mb-1 text-bright">§3. Амнистия</p>
           <p class="text-dim">Однократное прощение незарегистрированных магов при добровольной явке.</p>
         </div>
-        <div class="border border-stone-700 p-3 bg-[#d4c9ac]/40">
+        <div class="bg-[#d4c9ac]/40 p-3">
           <p class="font-bold mb-1 text-bright">§4. Надзор</p>
           <p class="text-dim">Сохранение федерального контроля над магией III категории и выше.</p>
         </div>
@@ -183,24 +185,24 @@
       <div class="hr-thick mb-1"></div>
       <div class="hr-thin mb-6"></div>
 
-      <div class="grid md:grid-cols-2 gap-6">
-        <div class="border-t-2 border-black pt-3">
+      <div class="grid md:grid-cols-2 gap-x-8 gap-y-6">
+        <div class="border-t border-stone-600 pt-3">
           <p class="type text-xs text-dim mb-1">ЦИРКУЛЯР №211 · 11.03.1922</p>
           <h3 class="serif font-bold text-lg mb-2 text-bright">О кончине Директора и назначении преемника</h3>
           <p class="type text-sm text-bright">Бюро с прискорбием сообщает о безвременной кончине Директора Грегора Менделя. Флаги приспущены. Приём по личным делам приостановлен до особого распоряжения.</p>
           <p class="type text-sm text-bright mt-2">В соответствии с внутренним регламентом, обязанности Директора отделения Эшвуд временно возложены на <span class="text-bright font-bold">Майкла Морригана</span>, заместителя Директора. Приказ вступает в силу немедленно.</p>
         </div>
-        <div class="border-t-2 border-black pt-3">
+        <div class="border-t border-stone-600 pt-3">
           <p class="type text-xs text-dim mb-1">ЦИРКУЛЯР №212 · 12.03.1922</p>
           <h3 class="serif font-bold text-lg mb-2 text-bright">О приостановке Протокола</h3>
           <p class="type text-sm text-bright">Рассмотрение Протокола Гармонии отложено. Все ранее выданные временные разрешения остаются в силе до дальнейших указаний.</p>
         </div>
-        <div class="border-t-2 border-black pt-3">
+        <div class="border-t border-stone-600 pt-3">
           <p class="type text-xs text-dim mb-1">ЦИРКУЛЯР №213 · 12.03.1922</p>
           <h3 class="serif font-bold text-lg mb-2 text-bright">Об усилении надзора</h3>
           <p class="type text-sm text-bright">В связи с нестабильной обстановкой патрули Бюро усилены. Регистрация магов III категории — обязательна в течение 48 часов.</p>
         </div>
-        <div class="border-t-2 border-black pt-3">
+        <div class="border-t border-stone-600 pt-3">
           <p class="type text-xs text-dim mb-1">ЦИРКУЛЯР №214 · 12.03.1922</p>
           <h3 class="serif font-bold text-lg mb-2 text-bright">О слухах</h3>
           <p class="type text-sm text-bright">Распространение непроверенных сведений о причинах смерти Директора приравнивается к нарушению общественного порядка. Виновные будут привлечены.</p>
@@ -210,37 +212,28 @@
 
     <div class="hr-double my-8"></div>
 
-    <!-- SECTIONS -->
+    <!-- SECTIONS (Без заголовка и без рамок) -->
     <section class="mb-10">
-      <div class="kicker text-[10px] text-center text-dim mb-1">РАЗДЕЛЫ БЮРО</div>
-      <h2 class="serif font-black text-center text-bright text-3xl md:text-5xl leading-none mb-2">Служебные отделы</h2>
-      <div class="hr-thick mb-1"></div>
-      <div class="hr-thin mb-6"></div>
-
-      <div class="grid md:grid-cols-3 gap-4">
-        <a href="reestr.html" class="paper p-6 border-2 border-black text-center block hover:opacity-90 transition bg-[#e8dfc8]">
+      <div class="grid md:grid-cols-3 gap-6 text-center mt-4">
+        <a href="reestr.html" class="block hover:opacity-60 transition opacity-90">
           <div class="text-4xl mb-2">📜</div>
           <h3 class="serif font-bold text-lg text-bright">РЕЕСТР МАГОВ</h3>
           <p class="type text-xs text-dim mt-2">Обязательная регистрация всех практикующих</p>
-          <div class="mt-4 stamp text-xs text-black border border-black inline-block px-3 py-1">ОТКРЫТЬ →</div>
         </a>
-        <a href="licenses.html" class="paper p-6 border-2 border-black text-center block hover:opacity-90 transition bg-[#e8dfc8]">
+        <a href="licenses.html" class="block hover:opacity-60 transition opacity-90">
           <div class="text-4xl mb-2">🎫</div>
           <h3 class="serif font-bold text-lg text-bright">ЛИЦЕНЗИИ</h3>
           <p class="type text-xs text-dim mt-2">Выдача разрешений на магическую деятельность</p>
-          <div class="mt-4 stamp text-xs text-black border border-black inline-block px-3 py-1">ОТКРЫТЬ →</div>
         </a>
-        <a href="laws.html" class="paper p-6 border-2 border-black text-center block hover:opacity-90 transition bg-[#e8dfc8]">
+        <a href="laws.html" class="block hover:opacity-60 transition opacity-90">
           <div class="text-4xl mb-2">⚖️</div>
           <h3 class="serif font-bold text-lg text-bright">ЗАКОНЫ</h3>
           <p class="type text-xs text-dim mt-2">Действующие акты магического права</p>
-          <div class="mt-4 stamp text-xs text-black border border-black inline-block px-3 py-1">ОТКРЫТЬ →</div>
         </a>
-        <a href="jobs.html" class="paper p-6 border-2 border-black text-center block hover:opacity-90 transition bg-[#e8dfc8] md:col-span-3">
+        <a href="jobs.html" class="block hover:opacity-60 transition opacity-90 md:col-span-3 mt-2">
           <div class="text-4xl mb-2">👔</div>
           <h3 class="serif font-bold text-lg text-bright">ОТДЕЛ КАДРОВ</h3>
           <p class="type text-xs text-dim mt-2">Вакансии и приём на службу</p>
-          <div class="mt-4 stamp text-xs text-black border border-black inline-block px-3 py-1">ОТКРЫТЬ →</div>
         </a>
       </div>
     </section>
@@ -248,7 +241,7 @@
     <div class="hr-double my-8"></div>
 
     <!-- ANNOUNCEMENT -->
-    <section class="border-l-4 border-red-900 pl-4 py-2 mb-10">
+    <section class="pl-4 py-2 mb-10 border-l-4 border-red-900">
       <p class="type text-sm leading-relaxed text-bright"><span class="font-bold text-bright">ВНИМАНИЕ ВСЕМ МАГАМ ЭШВУДА:</span> В связи с кончиной Директора и приостановкой Протокола Гармонии, всем практикующим настоятельно рекомендуется явиться в отделение Бюро в течение 30 дней для подтверждения статуса. <span class="stamp text-red-800">Неявка расценивается как отказ от сотрудничества.</span></p>
     </section>
 
